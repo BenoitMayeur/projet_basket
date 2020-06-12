@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="shortcut icon" href="./img/imageCamera.ico" />
+    <title>Photo's</title>
+</head>
+
+<body>
+    <main>
+        <div class="description_item">
+            <h1 class="title_item" name="title_item"></h1>
+            <div class="big_div_img">
+                <div class="div_img">
+                    <img name="image_item">
+                </div>
+            </div>
+            <div class="div_data_item">
+                <div>
+                    De <span name="author_item"></span>, <span name="country_item"></span>
+
+                </div>
+            </div>
+            <div class="div_price_item">
+                <span class="price_item" name="price_item"></span>
+            </div>
+            <div class="div_comment">
+                <p name="comment_item"></p>
+            </div>
+
+
+            <div class="div_form">
+                <form>
+                    <input type="number" name="amount_item" min="0" placeholder="Nombre à commander" data-id="">
+                    <input class="validation_button" name="button_validation" type="button" value="Commander">
+                </form>
+            </div>
+        </div>
+        <div class="list_items">
+            <div class="big_div_basket">
+                <div>
+                    <span class="lnr lnr-cart icon_basket"></span>
+                </div>
+                <div>
+                    Nombre d'articles: <span name="total_amount_articles"></span>
+                </div>
+                <div class="div_total">
+                    Total à payer: <span name="total_price_to_pay">0</span> euros
+                </div>
+            </div>
+        </div>
+        <div class="div_checkout invisible">
+            <div class="message_basket_empty invisible">
+                <p>
+                    Votre panier est vide.
+                </p>
+            </div>
+
+            <table>
+                <tr>
+                    <th colspan="5">
+                        Récapitulatif du panier
+                    </th>
+                </tr>
+
+            </table>
+            <div class="big_div_with_buttons">
+                <div class="button_basket_chekckout" name="button_previous_page">
+                    Revenir à la liste
+                </div>
+                <div class="button_basket_chekckout" name="empty_basket">
+                    Vider le panier
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/source/sourceJSON.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
